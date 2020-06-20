@@ -408,6 +408,9 @@ void mouseClicked(){
   RGBc[1] = int(green(colour));
   RGBc[2] = int(blue(colour));
   int gtb = 0;
+  if(mouseX > 1200){
+   gtb = 4; 
+  }
   for(int i = 0;i <= 2;i++){
     //print(RGBc[0] + " " + RGBc[1] + " " +RGBc[2] + " : " + BadRBGv[i][0] + " " +BadRBGv[i][1] + " " +BadRBGv[i][2] + "   " );
     if(RGBc[0] == BadRBGv[i][0] && RGBc[1] == BadRBGv[i][1] &&RGBc[2] == BadRBGv[i][2] ){
